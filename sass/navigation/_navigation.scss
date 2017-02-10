@@ -1,0 +1,65 @@
+// colors
+
+$main-text: #4e6361; // main text
+$link: #6cac70; // anchor tags
+$background: #f5f4e9; // body background color
+
+$color-1: #0c0c0c; // green dark
+$color-2: #EC1B23; // green darker
+$color-3: #aab5b7; // green light
+
+// fonts
+
+$primary-font: 'Titillium Web', sans-serif;
+
+// z-index
+
+$secondary-nav: 1;
+$content-zindex: 2;
+$header-zindex: 3;
+
+// header height
+
+$header-S: 40px;
+$header-M: 50px;
+
+
+
+// breakpoints
+
+$S:     320px;
+$M:     768px;
+$L:     1170px;
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; }
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; }
+  }
+}
+
+// super light grid - it works with the .cd-container class inside style.scss
+
+@mixin column($percentage, $float-direction:left) {
+  width: 100% * $percentage;
+  float: $float-direction;
+}
+
+
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+@import "links";
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+@import "menus";

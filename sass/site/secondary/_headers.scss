@@ -1,0 +1,32 @@
+.title-header {
+  background: rgba(darken(#efefef, 24), 0.4);
+  padding: 5px 10px 5px 24px;
+  font-size: em(11);
+  text-transform: uppercase;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: 700;
+  border: rgba(darken(#efefef, 10), 0.2) 1px solid;
+
+  &:before {
+    @include position(absolute, 0 nil 0 10px);
+    margin: auto;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    background: rgba(#000, 0.2);
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin-bottom: 5px;
+    border-radius: 2px;
+  }
+
+  span {
+    float: right;
+    color: #c00;
+  }
+
+}

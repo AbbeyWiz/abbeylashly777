@@ -1,0 +1,186 @@
+.examples {
+    display: inline-block;
+    //padding: 20px 30px;
+    margin-bottom: 20px;
+    //background: #fff;
+    //border-radius: 4px;
+    //box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    //text-shadow: none
+}
+
+.examples .button,
+.examples .button-addon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+.examples .button-addon .button {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.examples .button svg {
+    margin-right: 7px;
+    vertical-align: -3px;
+    width: 16px;
+    height: 16px;
+    fill: currentColor
+}
+
+@media (min-width:480px) {
+    .examples {
+        margin-bottom: 20px
+    }
+}
+
+.button-large {
+    padding: 10px 20px;
+    background: #3498db;
+    color: #fff;
+    border-color: #217dbb;
+    font-size: 16px;
+    font-size: 1rem;
+    text-shadow: none
+}
+
+.button-large:focus,
+.button-large:hover {
+    color: #fff;
+    border-color: #1d6fa5
+}
+
+.error body,
+html.error {
+    height: 100%
+}
+
+.error body {
+    width: 100%;
+    display: table;
+    table-layout: fixed
+}
+
+.error main {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle
+}
+
+
+// ==========================================================================
+// Shr.js styles
+// https://github.com/selz/shr
+// ==========================================================================
+
+.button, .button-facebook, .button-google, .button-pinterest, .button-twitter {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  color: #FFF;
+}
+
+.button + .button-addon {
+  margin-left: 10px;
+}
+
+.button-addon + {
+  .button, .button-addon {
+    margin-left: 10px;
+  }
+}
+
+.share-count {
+  margin-left: 10px;
+}
+
+.button-addon {
+  white-space: nowrap;
+}
+
+.button, .share-count {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.button {
+  padding: 5px 10px;
+  // background-image: linear-gradient(#3B5998, #355089);
+  // background-color: #3B5998;
+  // border: 1px solid #2d4373;
+  // border-bottom-color: #263961;
+  // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  &:focus, &:hover {
+    border-color: #263961;
+    color: #FFF;
+  }
+}
+
+.button-facebook {
+  background-color: #222;
+  &:focus, &:hover {
+    color: #FFF;
+  }
+}
+
+.button-twitter {
+  background-color: #222;
+  &:focus, &:hover {
+    color: #FFF;
+  }
+}
+
+.button-pinterest {
+  background-color: #222;
+  &:focus, &:hover {
+    color: #FFF;
+  }
+}
+
+.button-google {
+  background-color: #222;
+  &:focus, &:hover {
+    color: #FFF;
+  }
+}
+
+.button-github {
+  background-color: #222;
+  &:focus, &:hover {
+    color: #FFF;
+  }
+}
+
+.share-count {
+  position: relative;
+  padding: 5px 6.67px;
+  background: #FFF;
+  border: 1px solid #D3DADE;
+  text-align: center;
+  min-width: 30px;
+  color: #55646B;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    left: 1px;
+    top: 50%;
+    margin-top: -4px;
+    background: inherit;
+    border: inherit;
+    border-width: 1px 0 0 1px;
+    -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+    transform: rotate(-45deg) translate(-50%, -50%);
+  }
+}
